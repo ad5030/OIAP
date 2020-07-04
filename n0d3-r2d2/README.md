@@ -18,4 +18,4 @@ July 4 2020
 
 ### r2d2
 
- * [/opt/r2d2/os/osx_send_message.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/osx_send_message.sh)
+ * [/opt/r2d2/os/osx_send_message.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-r2d2/opt/r2d2/os/osx_send_message.sh)

@@ -4,10 +4,6 @@
 1. [n0d3 b0x](n0d3-b0x/README.md)
 2. [n0d3 r2d2](n0d3-r2d2/README.md)
 
-## CHANGELOG
-
-[CHANGELOG](CHANGELOG.md)
-
 ## Directory structure
 
 ```sh
@@ -52,6 +48,10 @@
             └── os
                 └── osx_send_message.sh
 ```
+
+## CHANGELOG
+
+[CHANGELOG](CHANGELOG.md)
 
 ## LICENCE
 

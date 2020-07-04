@@ -1,6 +1,9 @@
 
 # OIAP Scripts
 
+* [n0d3 b0x](n0d3-b0x/README.md)
+* [n0d3 r2d2](n0d3-r2d2/README.md)
+
 ## CHANGELOG
 
 [CHANGELOG](CHANGELOG.md)

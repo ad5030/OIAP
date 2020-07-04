@@ -3,8 +3,6 @@
 ## Directory structure
 
 ```sh
-├── CHANGELOG.md
-├── LICENSE
 ├── README.md
 ├── opt
 │   └── b0x

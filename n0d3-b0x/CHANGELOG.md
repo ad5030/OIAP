@@ -6,6 +6,7 @@ July 4 2020
  * /opt/b0x/os/os_clean.sh
  * /opt/b0x/os/os_novnc_websockify.sh
  * /opt/b0x/os/os_security_update.sh
+ * /opt/b0x/os/osx_send_message.sh
  * /opt/b0x/pms/pms_create_event.py
  * /opt/b0x/pms/pms_init.py
  * /opt/b0x/pms/pms_read_sensors.py

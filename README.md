@@ -1,5 +1,11 @@
 
+# OIAP Scripts
+
+## CHANGELOG
+
 [CHANGELOG](CHANGELOG.md)
+
+## Directory structure
 
 ```sh
 ├── README.md
@@ -43,3 +49,7 @@
             └── os
                 └── osx_send_message.sh
 ```
+
+## LICENCE
+
+[LICENCE](LICENCE.md)

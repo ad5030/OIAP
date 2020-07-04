@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------
-#~ @(#) Name : b0x_novnc_websockify.sh
+#~ @(#) Name : os_novnc_websockify.sh
 #~ @(#) Desc : check novnc_websockify service and start novnc_websockify if down
 #~ @(#) version : 1.0
 # Auteur : adm@di-marco.net

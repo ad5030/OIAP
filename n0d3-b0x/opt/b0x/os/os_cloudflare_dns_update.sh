@@ -11,7 +11,7 @@
 SCRIPT_NAME=`basename $0 .sh`
 SRC=$(dirname $0)
 HOST=`hostname -s`
-TMP_FILE=/var/log/_bot/_ux_CloudFlareDNSUpdate.txt
+TMP_FILE=/tmp/_$SCRIPT_NAME.txt
 DATE=$(date +"%Y%m%d-%H-%M-%S")
 
 ZoneID="<your cloudflare zone ID>" #cloudflare zone ID
@@ -20,7 +20,7 @@ DNSName="<your DNS Zone name>" #DNS Zone name
 Email="<your cloudflare email for login>" #cloudflare email used for login
 APIKey="<your cloudflare API key>" #cloudflare API key
 
-# Load _ENV_ param
+# Load _ENV_ params
 . $SRC/_ENV_
 
 if [ -f $TMP_FILE ];then

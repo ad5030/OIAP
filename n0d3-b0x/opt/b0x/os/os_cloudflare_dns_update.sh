@@ -52,6 +52,7 @@ else
   if ! $isDNSUpdated
   then
     echo "-> response error by cloudflare API"
+#    $SRC/ux_send_Message.sh $AppleID "<im>[${SCRIPT_NAME}][${DATE}][${HOST}][for zone: ${DNSName} is NOT UPDATED because: ${errorMessage}]"
     echo $_IP > $TMP_FILE
   fi
 fi

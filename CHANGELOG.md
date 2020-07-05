@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## v0.0.1
-July 4 2020
+July 5 2020
 
 ### b0x
 
@@ -9,6 +9,7 @@ July 4 2020
  * /opt/b0x/os/os_clean.sh
  * /opt/b0x/os/os_cloudflare_dns_update.sh
  * /opt/b0x/os/os_novnc_websockify.sh
+ * /opt/b0x/os/os_security_network.sh
  * /opt/b0x/os/os_security_update.sh
  * /opt/b0x/pms/pms_create_event.py
  * /opt/b0x/pms/pms_init.py

@@ -7,6 +7,7 @@ July 4 2020
 
  * /opt/b0x/gps/gps_get_data.py
  * /opt/b0x/os/os_clean.sh
+ * /opt/b0x/os/os_cloudflare_dns_update.sh
  * /opt/b0x/os/os_novnc_websockify.sh
  * /opt/b0x/os/os_security_update.sh
  * /opt/b0x/pms/pms_create_event.py

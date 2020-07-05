@@ -7,17 +7,19 @@
 ## Directory structure
 
 ```sh
+├── CHANGELOG.md
+├── LICENSE
 ├── README.md
 ├── n0d3-b0x
-│   ├── CHANGELOG.md
-│   ├── LICENSE
 │   ├── README.md
 │   ├── opt
 │   │   └── b0x
 │   │       ├── gps
 │   │       │   └── gps_get_data.py
 │   │       ├── os
+│   │       │   ├── _ENV_
 │   │       │   ├── os_clean.sh
+│   │       │   ├── os_cloudflare_dns_update.sh
 │   │       │   ├── os_novnc_websockify.sh
 │   │       │   └── os_security_update.sh
 │   │       ├── pms

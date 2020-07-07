@@ -3,7 +3,6 @@
 #~ @(#) Name : os_novnc_websockify.sh
 #~ @(#) Desc : check novnc_websockify service and start novnc_websockify if down
 #~ @(#) version : 1.0
-# Auteur : adm@di-marco.net
 # Date : 2020-06-01
 #-------------------------------------------------------------------
 # Version history

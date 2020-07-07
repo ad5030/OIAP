@@ -3,7 +3,6 @@
 #~ @(#) Name : b0x_clean.sh
 #~ @(#) Desc : 
 #~ @(#) version : 1.0
-# Auteur : adm@di-marco.net
 # Date : 2020-06-01
 #-------------------------------------------------------------------
 # Version history

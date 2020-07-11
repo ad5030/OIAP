@@ -21,7 +21,8 @@
 │       │   ├── pms_read_sensors.py
 │       │   ├── pms_rtc_time.py
 │       │   ├── pms_softhard_shutdown.py
-│       │   └── pms_upgrade.sh
+│       │   └── pms_upgrade_api.sh
+│       │   └── pms_upgrade_firmware.py
 │       ├── serial
 │       │   └── serial_uart_test_TxRx.py
 │       └── sms
@@ -57,7 +58,8 @@ July 5 2020
  * [/opt/b0x/pms/pms_read_sensors.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_read_sensors.py)
  * [/opt/b0x/pms/pms_rtc_time.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_rtc_time.py)
  * [/opt/b0x/pms/pms_softhard_shutdown.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_softhard_shutdown.py)
- * [/opt/b0x/pms/pms_upgrade.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_upgrade.sh)
+ * [/opt/b0x/pms/pms_upgrade_api.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_upgrade_api.sh)
+ * [/opt/b0x/pms/pms_upgrade_firmware.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_upgrade_firmware.py)
  * [/opt/b0x/serial/serial_uart_test_TxRx.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/serial/serial_uart_test_TxRx.py)
  * [/opt/b0x/sms/sms_sms2mail.pl](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/sms/sms_sms2mail.pl)
  * [/var/www/html/pi.txt](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/var/www/html/pi.txt)

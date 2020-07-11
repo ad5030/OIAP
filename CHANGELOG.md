@@ -16,7 +16,8 @@ July 5 2020
  * /opt/b0x/pms/pms_read_sensors.py
  * /opt/b0x/pms/pms_rtc_time.py
  * /opt/b0x/pms/pms_softhard_shutdown.py
- * /opt/b0x/pms/pms_upgrade.sh
+ * /opt/b0x/pms/pms_upgrade_api.sh
+ * /opt/b0x/pms/pms_upgrade_firmware.py
  * /opt/b0x/serial/serial_uart_test_TxRx.py
  * /opt/b0x/sms/sms_sms2mail.pl
  * /var/www/html/pi.txt

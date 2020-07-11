@@ -29,7 +29,8 @@
 │   │       │   ├── pms_read_sensors.py
 │   │       │   ├── pms_rtc_time.py
 │   │       │   ├── pms_softhard_shutdown.py
-│   │       │   └── pms_upgrade.sh
+│   │       │   └── pms_upgrade_api.sh
+│   │       │   └── pms_upgrade_firmware.py
 │   │       ├── serial
 │   │       │   └── serial_uart_test_TxRx.py
 │   │       └── sms

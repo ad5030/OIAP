@@ -10,6 +10,8 @@
 │       │   └── gps_get_data.py
 │       ├── os
 │       │   ├── _ENV_
+│       │   ├── .os_backup_exclude
+│       │   ├── os_backup.sh
 │       │   ├── os_clean.sh
 │       │   ├── os_cloudflare_dns_update.sh
 │       │   ├── os_novnc_websockify.sh
@@ -48,6 +50,8 @@ July 5 2020
 ### b0x
 
  * [/opt/b0x/gps/gps_get_data.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/gps/gps_get_data.py)
+ * [/opt/b0x/os/.os_backup_exclude](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/.os_backup_exclude)
+ * [/opt/b0x/os/os_backup.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_backup.sh)
  * [/opt/b0x/os/os_clean.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_clean.sh)
  * [/opt/b0x/os/os_cloudflare_dns_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_cloudflare_dns_update.sh)
  * [/opt/b0x/os/os_novnc_websockify.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_novnc_websockify.sh)

@@ -18,6 +18,8 @@
 │   │       │   └── gps_get_data.py
 │   │       ├── os
 │   │       │   ├── _ENV_
+│   │       │   ├── .os_backup_exclude
+│   │       │   ├── os_backup.sh
 │   │       │   ├── os_clean.sh
 │   │       │   ├── os_cloudflare_dns_update.sh
 │   │       │   ├── os_novnc_websockify.sh

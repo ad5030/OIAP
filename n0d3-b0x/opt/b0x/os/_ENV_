@@ -1,5 +1,10 @@
+## os_cloudflare_dns_update.sh
 ZoneID="<your cloudflare zone ID>" #cloudflare zone ID
 DNSRecord="<your DNS Zone record ID>" #DNS Zone record ID
 DNSName="<your DNS Zone name>" #DNS Zone name
 Email="<your cloudflare email for login>" #cloudflare email used for login
 APIKey="<your cloudflare API key>" #cloudflare API key
+
+## os_backup.sh
+BACKUP_PATH_DIR="<Backups destination directory>"
+BACKUP_EXCLUDE_FILE="<Backups exclude file>"

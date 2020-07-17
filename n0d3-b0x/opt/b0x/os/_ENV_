@@ -8,3 +8,6 @@ APIKey="<your cloudflare API key>" #cloudflare API key
 ## os_backup.sh
 BACKUP_PATH_DIR="<Backups destination directory>"
 BACKUP_EXCLUDE_FILE="<Backups exclude file>"
+
+## os_ipset_update.sh
+GEOIP_URL="https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=<LicenseKey>&suffix=zip"

@@ -16,12 +16,20 @@
 #~ Usage : os_ipset_update.sh whitelist <country>
 #-------------------------------------------------------------------
 
+SRC=$(dirname $0)
+
+# Load _ENV_ params
+. $SRC/_ENV_
+
 CHANGELOG="/var/log/ipset_changes.log"
 IPSET="/usr/sbin/ipset"
 GEOIP_URL="https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=<LicenseKey>&suffix=zip"
 
 IPSET_UP_RULES="/etc/ipset.up.rules"
 IPTABLES_UP_RULES="/etc/iptables.up.rules"
+
+# Load _ENV_ params
+. $SRC/_ENV_
 
 if [ $# -ne 2 ]; then
     echo "Usage $0 <ipset name> <country>"

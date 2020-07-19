@@ -25,10 +25,17 @@ print("Battery Current: " + str(api.get_battery_current()))
 print("Battery Power: " + str(api.get_battery_power()))
 print("Battery Level: " + str(api.get_battery_level()))
 print("Battery Health: " + str(api.get_battery_health()))
+print("Battery Max Charge Level: " + str(api.get_battery_max_charge_level()))
+print("Battery Capacity: " + str(api.get_battery_design_capacity()))
+
+print("************* Safe Shutdown **************")
+print("Battery Safe Shutdown Battery Level: " + str(api.get_safe_shutdown_battery_level()))
+print("Battery Safe Shutdown Battery Status: " + str(api.get_safe_shutdown_battery_status()))
 
 print("************* Fan **************")
 print("Fan Health: " + str(api.get_fan_health()))
 print("Fan Speed: " + str(api.get_fan_speed()))
+print("Fan Fan Automation: " + str(api.get_fan_automation()))
 
 print("************* rtc time **************")
 print("RTC Time: " + str(api.get_rtc_time(Definition.TIME_FORMAT_EPOCH)))

@@ -20,11 +20,14 @@
 #
 CHANGELOG="/var/log/ipset_changes.log"
 IPSET="/sbin/ipset"
-GEOIP_URL="https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=vjt6VF7axCPTsHBo&suffix=zip"
-
 IPSET_UP_RULES="/etc/ipset.up.rules"
 #IPTABLES_UP_RULES="/etc/iptables.up.rules"
 IPTABLES_UP_RULES="/etc/iptables/rules.v4"
+
+# Load _ENV_ params
+. $SRC/_ENV_
+
+GEOIP_URL="https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=${GEOIP_LICENSE_KEY}&suffix=zip"
 
 if [ $# -ne 2 ]; then
     echo "Usage $0 <ipset name> <country>"

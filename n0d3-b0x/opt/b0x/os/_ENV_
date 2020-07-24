@@ -1,13 +1,15 @@
-## os_cloudflare_dns_update.sh
+# Environnement init variable
+
+# For os_cloudflare_dns_update.sh
 ZoneID="<your cloudflare zone ID>" #cloudflare zone ID
 DNSRecord="<your DNS Zone record ID>" #DNS Zone record ID
 DNSName="<your DNS Zone name>" #DNS Zone name
 Email="<your cloudflare email for login>" #cloudflare email used for login
 APIKey="<your cloudflare API key>" #cloudflare API key
 
-## os_backup.sh
+# For os_backup.sh
 BACKUP_PATH_DIR="<Backups destination directory>"
 BACKUP_EXCLUDE_FILE="<Backups exclude file>"
 
-## os_ipset_update.sh
+## For os_ipset_update.sh
 GEOIP_URL="https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=<LicenseKey>&suffix=zip"

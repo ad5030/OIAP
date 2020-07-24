@@ -6,4 +6,4 @@
 /run/* 
 /mnt/* 
 /media/*
-/backups.log
+/tmp/os_backups.log

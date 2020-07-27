@@ -15,7 +15,8 @@
 ## v0.0.1
 
 July 5 2020
+{:.heading.post-date}
 
 ### r2d2
 
- * [/opt/r2d2/os/osx_send_message.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-r2d2/opt/r2d2/os/osx_send_message.sh)
+* [/opt/r2d2/os/osx_send_message.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-r2d2/opt/r2d2/os/osx_send_message.sh)

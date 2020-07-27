@@ -30,6 +30,7 @@
 │   │       │   ├── pms_create_event.py
 │   │       │   ├── pms_init.py
 │   │       │   ├── pms_read_sensors.py
+│   │       │   ├── pms_reboot.py
 │   │       │   ├── pms_rtc_time.py
 │   │       │   ├── pms_softhard_shutdown.py
 │   │       │   └── pms_upgrade_api.sh

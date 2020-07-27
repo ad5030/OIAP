@@ -74,7 +74,6 @@
 ## v0.0.2
 
 July 27 2020
-{:.heading.post-date}
 
 * Added :
   * /opt/b0x/pms/pms_reboot.py
@@ -84,7 +83,6 @@ July 27 2020
 ## v0.0.1
 
 July 5 2020
-{:.heading.post-date}
 
 * Added :
   * /opt/b0x/gps/gps_get_data.py

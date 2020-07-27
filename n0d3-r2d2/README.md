@@ -15,7 +15,6 @@
 ## v0.0.1
 
 July 5 2020
-{:.heading.post-date}
 
 ### r2d2
 

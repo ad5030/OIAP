@@ -23,6 +23,8 @@
 │       │   ├── pms_init.py
 │       │   ├── pms_read_sensors.py
 │       │   ├── pms_reboot.py
+│       │   ├── pms_reset.py
+│       │   ├── pms_reset_boot_mode.py
 │       │   ├── pms_rtc_time.py
 │       │   ├── pms_softhard_shutdown.py
 │       │   └── pms_upgrade_api.sh
@@ -56,6 +58,8 @@
 * [/opt/b0x/pms/pms_init.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_init.py)
 * [/opt/b0x/pms/pms_read_sensors.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_read_sensors.py)
 * [/opt/b0x/pms/pms_reboot.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_reboot.py)
+* [/opt/b0x/pms/pms_reset.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_reset.py)
+* [/opt/b0x/pms/pms_reset_boot_mode.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_reset_boot_mode.py)
 * [/opt/b0x/pms/pms_rtc_time.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_rtc_time.py)
 * [/opt/b0x/pms/pms_softhard_shutdown.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_softhard_shutdown.py)
 * [/opt/b0x/pms/pms_upgrade_api.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_upgrade_api.sh)

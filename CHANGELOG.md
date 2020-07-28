@@ -8,6 +8,9 @@ July 27 2020
 
 * Added :
   * /opt/b0x/pms/pms_reboot.py
+  * /opt/b0x/pms/pms_reset.py
+  * /opt/b0x/pms/pms_reset_boot_mode.py
+  
 * Fixed :
   * /opt/b0x/pms/pms_create_event.py
 

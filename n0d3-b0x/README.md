@@ -81,6 +81,9 @@ July 27 2020
 
 * Added :
   * /opt/b0x/pms/pms_reboot.py
+  * /opt/b0x/pms/pms_reset.py
+  * /opt/b0x/pms/pms_reset_boot_mode.py
+  
 * Fixed :
   * /opt/b0x/pms/pms_create_event.py
 
@@ -101,7 +104,6 @@ July 5 2020
   * /opt/b0x/pms/pms_create_event.py
   * /opt/b0x/pms/pms_init.py
   * /opt/b0x/pms/pms_read_sensors.py
-  * /opt/b0x/pms/pms_reboot.py
   * /opt/b0x/pms/pms_rtc_time.py
   * /opt/b0x/pms/pms_softhard_shutdown.py
   * /opt/b0x/pms/pms_upgrade_api.sh

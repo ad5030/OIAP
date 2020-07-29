@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from power_api import SixfabPower, Definition
+from power_api import SixfabPower, Event, Definition
 import time
 
 api = SixfabPower()
@@ -57,20 +57,18 @@ print("************* Battery Design Cap **************")
 print("Set Battery Design Capacity Result: " + str(api.set_battery_design_capacity(3400)))
 print("Battery Design Capacity: " + str(api.get_battery_design_capacity()))
 
-## Create Scheduled Events 
-#print("Result creating Scheduled Event: " + str(api.createScheduledEvent(0,1,2,120,1,(Definition.THURSDAY | Definition.FRIDAY),0)))
-#print("Result creating Scheduled Event: " + str(api.createScheduledEvent(1,1,2,120,1,1,0)))
-
-# Remove event by using id
-#print("Result removing Scheduled Event: " + str(api.removeScheduledEvent(1)))
-
-# Remove all events
-#print("Result removing all Scheduled Event: " + str(api.removeAllScheduledEvents()))
-
-# Firmware Ver.
+# Firmware Ver
 print("\r\n")
 print("************* Firmware Ver **************")
 print("Firmware Ver: " + str(api.get_firmware_ver()))
+
+# Event
+print("\r\n")
+print("************* Event **************")
+print("Result removing all Scheduled Event: " + str(api.remove_all_scheduled_events(200)))
+#print("Result creating Scheduled Event: " + str(api.create_scheduled_event(1,Definition.EVENT_TIME,Definition.EVENT_REPEATED,23400,1,Definition.EVERYDAY,Definition.HARD_POWER_ON,200)))
+#print("IDs of Scheduled Events: " + str(api.get_scheduled_event_ids(50)))
+
 
 # Actions
 #print("Hard Power Off: " + str(api.hardPowerOff()))

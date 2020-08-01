@@ -2,15 +2,16 @@
 
 ## v0.0.2
 
-July 27 2020
+August 01 2020
 
 ### b0x
 
 * Added :
+  * /opt/b0x/os/os_https_cert_update.sh
   * /opt/b0x/pms/pms_reboot.py
   * /opt/b0x/pms/pms_reset.py
   * /opt/b0x/pms/pms_reset_boot_mode.py
-  
+
 * Fixed :
   * /opt/b0x/pms/pms_create_event.py
 

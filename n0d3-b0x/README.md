@@ -14,6 +14,7 @@
 │       │   ├── os_backup.sh
 │       │   ├── os_clean.sh
 │       │   ├── os_cloudflare_dns_update.sh
+│       │   ├── os_https_cert_update.sh
 │       │   ├── os_ipset_update.sh
 │       │   ├── os_novnc_websockify.sh
 │       │   ├── os_security_network.sh
@@ -50,6 +51,7 @@
 * [/opt/b0x/os/os_backup.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_backup.sh)
 * [/opt/b0x/os/os_clean.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_clean.sh)
 * [/opt/b0x/os/os_cloudflare_dns_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_cloudflare_dns_update.sh)
+* [/opt/b0x/os/os_os_https_cert_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_https_cert_update.sh)
 * [/opt/b0x/os/os_ipset_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_ipset_update.sh)
 * [/opt/b0x/os/os_novnc_websockify.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_novnc_websockify.sh)
 * [/opt/b0x/os/os_security_network.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_security_network.sh)
@@ -77,9 +79,10 @@
 
 ## v0.0.2
 
-July 27 2020
+August 01 2020
 
 * Added :
+  * /opt/b0x/os/os_https_cert_update.sh
   * /opt/b0x/pms/pms_reboot.py
   * /opt/b0x/pms/pms_reset.py
   * /opt/b0x/pms/pms_reset_boot_mode.py

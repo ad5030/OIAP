@@ -13,3 +13,11 @@ BACKUP_EXCLUDE_FILE="<Backups exclude file>"
 
 ## For os_ipset_update.sh
 GEOIP_LICENSE_KEY="<LicenseKey>"
+
+## For os_https_cert_update.sh
+SSL_PATH_DIR="<SSL destination directory>"
+SSL_URL_REPO="<SSL repository>"
+SSL_REPO_USER="<SSL repository User>"
+SSL_REPO_PWD="<SSL repository Pwd>"
+CCA_KEY="<Client Certificate Authentication Key>"
+CCA_PWD="<Client Certificate Authentication Pwd>"

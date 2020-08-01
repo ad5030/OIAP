@@ -51,7 +51,7 @@
 * [/opt/b0x/os/os_backup.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_backup.sh)
 * [/opt/b0x/os/os_clean.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_clean.sh)
 * [/opt/b0x/os/os_cloudflare_dns_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_cloudflare_dns_update.sh)
-* [/opt/b0x/os/os_os_https_cert_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_https_cert_update.sh)
+* [/opt/b0x/os/os_https_cert_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_https_cert_update.sh)
 * [/opt/b0x/os/os_ipset_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_ipset_update.sh)
 * [/opt/b0x/os/os_novnc_websockify.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_novnc_websockify.sh)
 * [/opt/b0x/os/os_security_network.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_security_network.sh)

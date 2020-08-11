@@ -1,0 +1,5 @@
+# Environnement init variable
+
+## PMS
+PMS_API_UUID=<pms_device_token_id>
+PMS_API_KEY=<pms_api_key>

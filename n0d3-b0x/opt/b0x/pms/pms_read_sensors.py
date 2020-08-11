@@ -41,5 +41,8 @@ print("************* rtc time **************")
 print("RTC Time: " + str(api.get_rtc_time(Definition.TIME_FORMAT_EPOCH)))
 print("RTC Time: " + str(api.get_rtc_time(Definition.TIME_FORMAT_DATE_AND_TIME)))
 
+print("************* Firmware Ver **************")
+print("Firmware Ver: " + str(api.get_firmware_ver()))
+
 print("************* Event **************")
 print("IDs of Scheduled Events: " + str(api.get_scheduled_event_ids()))

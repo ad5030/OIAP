@@ -28,7 +28,9 @@
 │   │       │   ├── os_security_network.sh
 │   │       │   └── os_security_update.sh
 │   │       ├── pms
+│   │       │   ├── _ENV_
 │   │       │   ├── pms_create_event.py
+│   │       │   ├── pms_get_all_metrics.py
 │   │       │   ├── pms_init.py
 │   │       │   ├── pms_read_sensors.py
 │   │       │   ├── pms_reboot.py

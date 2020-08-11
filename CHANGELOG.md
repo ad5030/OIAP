@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v0.0.3
+
+August 11 2020
+
+* Added :
+  * /opt/b0x/pms/pms_get_all_metrics.py
+
+* Fixed :
+  * /opt/b0x/pms/pms_read_sensors.py
+
 ## v0.0.2
 
 August 01 2020

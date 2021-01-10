@@ -49,7 +49,7 @@
 ```
 
 * [/opt/b0x/gps/gps_get_data.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/gps/gps_get_data.py)
-* [/opt/b0x/os/_ENV_](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/_ENV_)
+* [/opt/b0x/os/_ENV\_](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/_ENV_)
 * [/opt/b0x/os/.os_backup_exclude](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/.os_backup_exclude)
 * [/opt/b0x/os/os_backup.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_backup.sh)
 * [/opt/b0x/os/os_clean.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_clean.sh)
@@ -59,7 +59,7 @@
 * [/opt/b0x/os/os_novnc_websockify.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_novnc_websockify.sh)
 * [/opt/b0x/os/os_security_network.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_security_network.sh)
 * [/opt/b0x/os/os_security_update.sh](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/os/os_security_update.sh)
-* [/opt/b0x/pms/_ENV_](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/_ENV_)
+* [/opt/b0x/pms/_ENV\_](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/_ENV_)
 * [/opt/b0x/pms/pms_create_event.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_create_event.py)
 * [/opt/b0x/pms/pms_init.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_init.py)
 * [/opt/b0x/pms/pms_read_sensors.py](https://github.com/ad5030/OIAP/blob/master/n0d3-b0x/opt/b0x/pms/pms_read_sensors.py)
@@ -86,8 +86,8 @@
 January 10 2021
 
 * Added :
-  * /opt/b0x/os/_ENV
-  * /opt/b0x/pms/_ENV
+  * /opt/b0x/os/_ENV\_
+  * /opt/b0x/pms/_ENV\_
   * /opt/b0x/pms/pms_reset.py
   * /opt/b0x/pms/pms_reset_boot_mode.py
   

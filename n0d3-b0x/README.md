@@ -86,8 +86,8 @@
 January 10 2021
 
 * Added :
-  * /opt/b0x/os/\_ENV\_
-  * /opt/b0x/pms/\_ENV\_
+  * /opt/b0x/os/_ENV\_
+  * /opt/b0x/pms/_ENV\_
   * /opt/b0x/pms/pms_reset.py
   * /opt/b0x/pms/pms_reset_boot_mode.py
   

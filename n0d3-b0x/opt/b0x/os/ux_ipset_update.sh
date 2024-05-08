@@ -52,63 +52,72 @@ function cleanup {
 
 cd $TMPDIR
 
-[ $? -ne 0 ] && fail "Problem using tmp directory $TMPDIR"
-curlout=`curl -J -L -u "${accountID}":"${licenseKEY}" 'https://download.maxmind.com/geoip/databases/GeoLite2-Country-CSV/download?suffix=zip' -o $GEOIP_FILE 2>&1`
-[ $? -ne 0 ] && fail "Problem downloading GeoIP database: $curlout"
-unzip -q $GEOIP_FILE
+###
+#mv /tmp/geoip.zip $GEOIP_FILE
+cp -Rp /tmp/GeoLite2-Country-CSV_20240507 $TMPDIR
+
+###
+
+#[ $? -ne 0 ] && fail "Problem using tmp directory $TMPDIR"
+#curlout=`curl -J -L -u "${accountID}":"${licenseKEY}" 'https://download.maxmind.com/geoip/databases/GeoLite2-Country-CSV/download?suffix=zip' -o $GEOIP_FILE 2>&1`
+#[ $? -ne 0 ] && fail "Problem downloading GeoIP database: $curlout"
+# unzip -q $GEOIP_FILE
 cd GeoLite2-Country-CSV*
 
 GEOID=`egrep -i "${COUNTRY}" GeoLite2-Country-Locations-en.csv | cut -f1 -d,`
 [ $? -ne 0 ] && fail "$COUNTRY not found in GeoIP file"
+
 for IPvX in 4 6; do
+
 	SET=${SETNAME}${IPvX}
 	grep $GEOID GeoLite2-Country-Blocks-IPv${IPvX}.csv | cut -f1 -d, > $CIDR_FILE
-     if [ "$IPvX" -eq "4" ]; then
-        # Add all locahost Address
-        echo 127.0.0.0/8 >> $CIDR_FILE
-        # Add all IPv4 Private Address
-        echo 10.0.0.0/8 >> $CIDR_FILE
-        echo 172.16.0.0/12 >> $CIDR_FILE
-        echo 192.168.0.0/16 >> $CIDR_FILE
-    
-        $IPSET -exist create ${SET} hash:net family inet
-        $IPSET create ${SET}-tmp hash:net family inet
-    else
-        $IPSET -exist create ${SET} hash:net family inet6
-        $IPSET create ${SET}-tmp hash:net family inet6
-    fi
-    [ $? -ne 0 ] && fail "Problem creating tmp ipset"
-    while read line; do
-    $IPSET add ${SET}-tmp $line;
-            [ $? -ne 0 ] && fail "Problem updating tmp ipset"
-    done < $CIDR_FILE
 
-    # Check for changes
-    if [ -n $CHANGELOG ]; then
-        $IPSET save ${SET} > ${TMPDIR}/$$_${SET}.ipset
-        $IPSET save ${SET}-tmp > ${TMPDIR}/$$_${SET}-tmp.ipset
-        echo `date`": Processing $COUNTRY..." >> $CHANGELOG
-        echo `wc -l $CIDR_FILE | cut -f1 -d' '`" blocks loaded" >> $CHANGELOG
-                diffout=`diff ${TMPDIR}/$$_${SET}.ipset ${TMPDIR}/$$_${SET}-tmp.ipset`
-        if [ $? -ne 0 ]; then 
-            echo $diffout >> $CHANGELOG
-        else
-            echo "No changes" >> $CHANGELOG
-        fi
-        echo >> $CHANGELOG
-    fi
+	if [ "$IPvX" -eq "4" ]; then
+		$IPSET -exist create ${SET} hash:net family inet
+		$IPSET create ${SET}-tmp hash:net family inet
+	else
+		$IPSET -exist create ${SET} hash:net family inet6
+		$IPSET create ${SET}-tmp hash:net family inet6
+	fi
+	[ $? -ne 0 ] && fail "Problem creating tmp ipset"
 
-    # Flush ipset whitelist hashmap
-    $IPSET flush $COUNTRY  > /dev/null
-    $IPSET flush $SETNAME  > /dev/null
+	while read line; do
+		echo "$IPSET add ${SET}-tmp $line;"
+		$IPSET add ${SET}-tmp $line;
+		[ $? -ne 0 ] && fail "Problem updating tmp ipset"
+	done < $CIDR_FILE
 
-    $IPSET swap ${SET}-tmp $SET
-        [ $? -ne 0 ] && fail "Problem updating live ipset"
-    $IPSET destroy ${SET}-tmp
-        [ $? -ne 0 ] && fail "Problem destroying tmp ipset"
+	# Check for changes
+	if [ -n $CHANGELOG ]; then
+		$IPSET save ${SET} > ${TMPDIR}/$$_${SET}.ipset
+		$IPSET save ${SET}-tmp > ${TMPDIR}/$$_${SET}-tmp.ipset
+		echo `date`": Processing $COUNTRY..." >> $CHANGELOG
+		echo `wc -l $CIDR_FILE | cut -f1 -d' '`" blocks loaded" >> $CHANGELOG
+		diffout=`diff ${TMPDIR}/$$_${SET}.ipset ${TMPDIR}/$$_${SET}-tmp.ipset`
+		if [ $? -ne 0 ]; then 
+			echo $diffout >> $CHANGELOG
+		else
+			echo "No changes" >> $CHANGELOG
+		fi
+		echo >> $CHANGELOG
+	fi
+
+	$IPSET swap ${SET}-tmp $SET
+	[ $? -ne 0 ] && fail "Problem updating live ipset"
+
+	$IPSET destroy ${SET}-tmp
+	[ $? -ne 0 ] && fail "Problem destroying tmp ipset"
 done
 
 cleanup
+
+# Add local IPv4 and IPv6 address
+/usr/sbin/ipset add whitelist4 127.0.0.0/8
+/usr/sbin/ipset add whitelist4 10.0.0.0/8
+/usr/sbin/ipset add whitelist4 172.16.0.0/12
+/usr/sbin/ipset add whitelist4 192.168.0.0/16
+/usr/sbin/ipset add whitelist6 ::/128
+/usr/sbin/ipset add whitelist6 fc00::/7
 
 # Update rules and persit at reboot
 if [ -f ${IPSET_UP_RULES} ];then

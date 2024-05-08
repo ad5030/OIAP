@@ -63,17 +63,22 @@ GEOID=`egrep -i "${COUNTRY}" GeoLite2-Country-Locations-en.csv | cut -f1 -d,`
 for IPvX in 4 6; do
 	SET=${SETNAME}${IPvX}
 	grep $GEOID GeoLite2-Country-Blocks-IPv${IPvX}.csv | cut -f1 -d, > $CIDR_FILE
-    if [ "$IPvX" -eq "4" ]; then
+     if [ "$IPvX" -eq "4" ]; then
         # Add all locahost Address
         echo 127.0.0.0/8 >> $CIDR_FILE
         # Add all IPv4 Private Address
         echo 10.0.0.0/8 >> $CIDR_FILE
         echo 172.16.0.0/12 >> $CIDR_FILE
         echo 192.168.0.0/16 >> $CIDR_FILE
-    
         $IPSET -exist create ${SET} hash:net family inet
         $IPSET create ${SET}-tmp hash:net family inet
-    else
+    fi
+    if [ "$IPvX" -eq "6" ]; then
+        # Add all locahost Address
+        echo fe80::/10 >> $CIDR_FILE
+        # Add all IPv6 Private Address
+        echo FC00::/7 >> $CIDR_FILE
+        echo FD00::/7 >> $CIDR_FILE
         $IPSET -exist create ${SET} hash:net family inet6
         $IPSET create ${SET}-tmp hash:net family inet6
     fi

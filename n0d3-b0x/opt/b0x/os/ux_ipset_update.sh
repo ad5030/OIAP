@@ -51,17 +51,12 @@ function cleanup {
 }
 
 cd $TMPDIR
+[ $? -ne 0 ] && fail "Problem using tmp directory $TMPDIR"
 
-###
-#mv /tmp/geoip.zip $GEOIP_FILE
-cp -Rp /tmp/GeoLite2-Country-CSV_20240507 $TMPDIR
+curlout=`curl -J -L -u "${accountID}":"${licenseKEY}" 'https://download.maxmind.com/geoip/databases/GeoLite2-Country-CSV/download?suffix=zip' -o $GEOIP_FILE 2>&1`
+[ $? -ne 0 ] && fail "Problem downloading GeoIP database: $curlout"
 
-###
-
-#[ $? -ne 0 ] && fail "Problem using tmp directory $TMPDIR"
-#curlout=`curl -J -L -u "${accountID}":"${licenseKEY}" 'https://download.maxmind.com/geoip/databases/GeoLite2-Country-CSV/download?suffix=zip' -o $GEOIP_FILE 2>&1`
-#[ $? -ne 0 ] && fail "Problem downloading GeoIP database: $curlout"
-# unzip -q $GEOIP_FILE
+unzip -q $GEOIP_FILE
 cd GeoLite2-Country-CSV*
 
 GEOID=`egrep -i "${COUNTRY}" GeoLite2-Country-Locations-en.csv | cut -f1 -d,`
